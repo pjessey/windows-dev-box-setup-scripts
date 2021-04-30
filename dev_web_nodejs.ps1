@@ -14,7 +14,7 @@ $helperUri = $helperUri.TrimEnd("'", " ")
 $helperUri = $helperUri.Substring(0, $helperUri.LastIndexOf("/"))
 $helperUri += "/scripts"
 write-host "helper script base URI is $helperUri"
-
+exit 
 function executeScript {
     Param ([string]$script)
     write-host "executing $helperUri/$script ..."
